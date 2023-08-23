@@ -34,7 +34,7 @@
 }
 
 .FormAlert {
-   position: absolute;
+   position: fixed;
    top: 100px;
    right: 20px;
    background-color: var(--black);
@@ -42,6 +42,7 @@
    padding: 10px 24px;
    align-items: center;
    display: flex;
+   z-index: 11;
 }
 
 .FormButton:hover {
