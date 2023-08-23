@@ -26,6 +26,8 @@ function Form() {
   const [submitted, setSubmitted] = useState(false);
   const [text, setText] = useState('');
 
+  const regExp = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z0-9_-]+)/;
+
   async function sendEmail(email: string) {
     const res: any = await ky.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/email`, {json: email}).json();
     try {
@@ -64,7 +66,7 @@ function Form() {
           <input
             className={styles.FormInput}
             placeholder='Enter your email'
-            {...register('email', {required: true, maxLength: 25})}
+            {...register('email', {required: true, pattern: regExp, maxLength: 25})}
           />
           <button type='submit' disabled={submitting} className={clsx(styles.FormButton, submitting && styles.Disable)}>
             Get started
