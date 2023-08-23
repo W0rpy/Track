@@ -1,0 +1,35 @@
+.Questions {
+   padding: 200px 0px 0px 0px;
+   margin-bottom: 200px;
+}
+.QuestionsBlock {
+   display: grid;
+   grid-template-columns: 1fr 480px;
+   column-gap: 20px;
+}
+.QuestionsImage {
+   padding: 56px 0px 0px 0px;
+}
+@media (max-width:991.98px) {
+   .QuestionsImage {
+      padding: 0px;
+      text-align: center;
+   }
+   .QuestionsBlock {
+      display: flex;
+      flex-direction: column;
+   }
+   .QuestionsContent {
+      margin-bottom: 40px;
+   }
+   .Questions {
+      padding: 100px 0px 0px 0px;
+      margin-bottom: 100px;
+   }
+}
+@media (max-width:766.98px) {
+.Image {
+   max-width: 100%;
+   height: auto;
+}
+} 

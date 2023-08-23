@@ -1,0 +1,218 @@
+.Footer {
+   background-color: var(--black);
+   color: var(--white);
+}
+.FooterBlock {
+   padding: 40px 0px 54px 0px;
+   display: flex;
+   justify-content: space-between;
+}
+.ColumnItem:not(:last-child) {
+   margin-bottom: 14px;
+}
+.ColumnLink {
+   color: inherit;
+}
+.FooterColumns {
+   display: flex;
+}
+.ColumnEmail {
+   margin-right: 82px;
+}
+.ColumnSections {
+   margin-right: 83px;
+}
+.EmailTitle {
+   font-weight: 800;
+   margin-bottom: 18px;
+}
+.EmailLink {
+   color: inherit;
+}
+.FooterLogo {
+   margin-bottom: 60px;
+   display: flex;
+   justify-content: space-between;
+}
+.EmailSupport {
+   display: none;
+}
+.FooterMedia {
+   display: flex;
+   gap: 20px;
+   margin-bottom: 40px;
+}
+.SocialNetwork {
+   width: 60px;
+   height: 60px;
+   border: 1px dashed var(--white);
+}
+.SocialNetworkLink {
+   display: flex;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+}
+.FormEmail {
+   background-color: inherit;
+   border:1px solid var(--white);
+   padding: 16px 20px 10px;
+   color: var(--white);
+   font-size: 1.11rem;
+   line-height: 1.5;
+   width: 100%;
+}
+.FormButton.Disable {
+   background-color: var(--grey);
+   transition: all 0.3s linear 0s;
+}
+.FormEmail::-webkit-input-placeholder  {
+   font-size: 1.11rem;
+   line-height: 1.5;
+   color: var(--white);
+}
+.FormEmail::-moz-placeholder  {
+   font-size: 1.11rem;
+   line-height: 1.5;
+   color: var(--white);
+}
+
+.FormAlert {
+   position: fixed;
+   display: flex;
+   top: 100px;
+   right: 20px;
+   background-color: var(--white);
+   color: var(--black);
+   padding: 10px 24px;
+   align-items: center;
+}
+.CloseButton {
+   position: relative;
+   width: 15px;
+   height: 15px;
+   margin-left: 10px;
+   background-color: inherit;
+}
+.CloseButton span::before {
+   content: '';
+   position: absolute;
+   width: 15px;
+   left: 0;
+   top: 6px;
+   transform: rotate(45deg);
+   height: 2px;
+   background-color: var(--black);
+}
+.CloseButton span::after {
+   content: '';
+   position: absolute;
+   width: 15px;
+   left: 0;
+   top: 6px;
+   transform: rotate(-45deg);
+   height: 2px;
+   background-color: var(--black);
+}
+
+.FormButton:hover {
+   transition: all 0.3s linear 0s;
+   color: var(--black);
+   background-color: var(--greybg);
+}
+.FormButton {
+   background-color: var(--white);
+   width: 176px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 52px;
+   transition: all 0.3s linear 0s;
+}
+.FormWrapper {
+   position: relative;
+}
+.FormError {
+   position: absolute;
+   bottom: -25px;
+   left: 0;
+   font-size: 0.875rem;
+}
+.Form {
+   max-width: 456px;
+   display: flex;
+   justify-content: flex-end;
+}
+.FormTitle {
+   font-size: 1.11;
+   font-weight: 800;
+   margin-bottom: 40px;
+   max-width: 320px;
+}
+.FooterForm {
+   margin-bottom: 80px;
+}
+.FooterCompany {
+   display: flex;
+}
+.FooterMobileColumns {
+   display: none;
+}
+
+@media (max-width:1198.98px) {
+   .FooterCompany {
+   flex-direction: column;
+   margin-right: 72px;
+   }
+   .ColumnEmail {
+      margin-bottom: 40px;
+   }
+   .ColumnEmail,.ColumnSections {
+      margin-right: 0px;
+   }
+}
+@media (max-width:991.98px) {
+   .FooterCompany {
+   margin-right: 20px;
+   }
+   .FooterMedia {
+      gap: 10px;
+   }
+   .Form {
+      max-width: 320px;
+      justify-content: flex-start;
+   }
+   .SocialNetwork {
+      width: 50px;
+      height: 50px;
+   }
+}
+@media (max-width:766.98px) {
+   .EmailSupport {
+      display: block;
+   }
+   .ColumnEmail,.FooterNav {
+      display: none;
+   }
+   .FooterMobileColumns {
+      display: flex;
+      flex-direction: column;
+   }
+   .FooterBlock {
+      display: block;
+   }
+   .ColumnSections,.ColumnAdditionally {
+      margin-bottom: 40px;
+   }
+   .Form {
+      max-width: 456px;
+   }
+}
+@media (max-width:450px) {
+   .Form {
+      max-width: 100%;
+   }
+   .FormEmail {
+      width: 100%;
+   }
+}

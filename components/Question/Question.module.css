@@ -1,0 +1,42 @@
+.Question {
+   display: grid;
+   grid-template-columns: 1fr 20px;
+   gap: 15px;
+   align-items: center;
+   padding: 20px 0px;
+   cursor: pointer;
+}
+.QuestionTitle {
+   font-size: 1.11rem;
+   font-weight: 800;
+}
+.QuestionButton {
+   width: 16px;
+   height: 2px;
+   background-color: var(--black);
+   position: relative;
+}
+.QuestionWrapper {
+   border-bottom: 1px solid var(--black);
+}
+.QuestionText {
+   max-width: 80%;
+}
+.QuestionTextWrapper {
+   transition: height 0.3s linear 0s;
+   overflow: hidden;
+}
+.QuestionButton.Active.QuestionButton::before{
+   transform: rotate(90deg);
+   transition: all 0.3s linear 0s;
+}
+.QuestionButton::before {
+   width: 16px;
+   height: 2px;
+   position: absolute;
+   content: '';
+   background-color: var(--black);
+   top: 0;
+   left: 0;
+   transition: all 0.3s linear 0s;
+}

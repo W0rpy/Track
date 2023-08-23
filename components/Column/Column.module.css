@@ -1,0 +1,55 @@
+.Column {
+   display: flex;
+   align-items: center;
+}
+
+.ColumnImage {
+   margin-right: 28px;
+   padding: 12px;
+}
+
+.ColumnTitle {
+   font-size: 1.55rem;
+   line-height: 1;
+   letter-spacing: -1.4px;
+   margin-bottom: 17px;
+}
+
+.Column:not(:last-child) {
+   margin-bottom: 48px;
+}
+
+.ColumnBody {
+   max-width: 480px;
+}
+
+@media (max-width:766.98px) {
+   .Column:not(:last-child) {
+      margin-bottom: 28px;
+   }
+
+   .ColumnTitle {
+      font-size: 1;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 10px;
+   }
+
+   .Icon {
+      width: 52px;
+      height: 47px;
+   }
+
+   .Column {
+      align-items: flex-start;
+   }
+
+   .ColumnText {
+      font-size: 0.875rem;
+   }
+
+   .ColumnImage {
+      margin-right: 13px;
+      padding: 9px;
+   }
+}

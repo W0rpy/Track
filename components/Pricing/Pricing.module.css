@@ -1,0 +1,78 @@
+.Pricing {
+   padding: 199px 0px 0px;
+}
+.PricingBody {
+   display: grid;
+   grid-template-columns: 470px 1fr;
+   column-gap: 71px;
+   align-items: center;
+   margin-bottom: 60px;
+}
+.PricingContent {
+   text-align: right;
+}
+.PricingText {
+   max-width: 490px;
+   display: inline-block;
+   text-indent: 150px;
+}
+.PricingImage {
+   position: relative;
+}
+.Illustration {
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+.PricingCards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 16px;
+}
+@media (max-width:991.98px) {
+   .Pricing {
+      padding: 100px 0px 0px;
+   }
+   .PricingBody {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 40px;
+   }
+    .Illustration {
+      width: 380px;
+   } 
+
+   .PricingImage {
+      text-align: center;
+   }
+}
+
+@media (max-width:766.98px) {
+   .PricingCards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0px 80px;
+   }
+   .Illustration {
+      width: 100%;
+   }
+   .PricingContent {
+      text-align: left;
+   }
+   .PricingText {
+      max-width: 100%;
+      display: block;
+      text-indent: 0px;
+   }
+}
+@media (max-width:540.98px) {
+   .PricingCards {
+      padding: 0px 40px;
+   }
+}
+@media (max-width:450px) {
+   .PricingCards {
+      padding: 0px;
+   }
+}

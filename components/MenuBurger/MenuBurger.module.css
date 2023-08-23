@@ -1,0 +1,38 @@
+.Menu {
+   width: 30px;
+   height: 20px;
+   position: relative;
+   background-color: inherit;
+}
+
+.Menu span {
+   position: absolute;
+   left: 0;
+   height: 4px;
+   background-color: var(--black);
+   border-radius: 50px;
+   width: 100%;
+}
+
+.Menu span:first-child {
+   width: 100%;
+   top: 3px;
+   transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s;
+}
+
+.Menu span:last-child {
+   bottom: 3px;
+   transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s;
+}
+
+.Menu.active span:first-child {
+   transform: rotate(45deg);
+   top: 7px;
+   transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s;
+}
+
+.Menu.active span:last-child {
+   transform: rotate(-45deg);
+   bottom: 8px;
+   transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s;
+}

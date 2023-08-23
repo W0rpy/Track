@@ -1,0 +1,104 @@
+.FormInput {
+   padding: 13px 20px;
+   border: 1px solid var(--black);
+   background-color: var(--white);
+   width: 100%;
+   font-size: 1.11rem;
+   line-height: 1.5;
+   color: var(--black);
+}
+
+.FormButton {
+   background-color: var(--black);
+   min-height: 54px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 0 0 198px;
+   color: var(--white);
+   transition: all 0.3s linear 0s;
+}
+.FormButton.Disable {
+   background-color: var(--grey);
+   transition: all 0.3s linear 0s;
+}
+.FormInput::-webkit-input-placeholder  {
+   font-size: 1.11rem;
+   line-height: 1.5;
+   color: var(--black);
+}
+.FormInput::-moz-placeholder  {
+   font-size: 1.11rem;
+   line-height: 1.5;
+   color: var(--black);
+}
+
+.FormAlert {
+   position: absolute;
+   top: 100px;
+   right: 20px;
+   background-color: var(--black);
+   color: var(--white);
+   padding: 10px 24px;
+   align-items: center;
+   display: flex;
+}
+
+.FormButton:hover {
+   transition: all 0.3s linear 0s;
+   color: var(--black);
+   background-color: var(--white);
+   border: 1px solid var(--black);
+}
+.CloseButton {
+   position: relative;
+   width: 15px;
+   height: 15px;
+   margin-left: 10px;
+   background-color: inherit;
+}
+.CloseButton span::before {
+   content: '';
+   position: absolute;
+   width: 15px;
+   left: 0;
+   top: 6px;
+   transform: rotate(45deg);
+   height: 2px;
+   background-color: var(--white);
+}
+.CloseButton span::after {
+   content: '';
+   position: absolute;
+   width: 15px;
+   left: 0;
+   top: 6px;
+   transform: rotate(-45deg);
+   height: 2px;
+   background-color: var(--white);
+}
+
+.Form {
+   display: flex;
+   max-width: 478px;
+}
+.FormWrapper {
+   position: relative;
+}
+.FormError {
+   position: absolute;
+   bottom: -25px;
+   left: 0;
+   font-size: 0.875rem;
+}
+
+@media (max-width:515px) {
+
+   .FormButton {
+      flex: 0 0 132px;
+   }
+
+   .Form {
+      max-width: 100%;
+   }
+}

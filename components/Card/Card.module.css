@@ -1,0 +1,160 @@
+.Card {
+   padding: 52px 28px 48px 40px;
+   border: 1px solid var(--black);
+   display: flex;
+   min-height: 624px;
+   flex-direction: column;
+}
+.Card:last-child {
+   background-color: var(--white);
+}
+.Card:nth-child(2) {
+   background-color: var(--black);
+   color: var(--white);
+}
+.CardBody {
+   flex: 1 1 auto;
+}
+.CardPrice {
+   display: flex;
+   font-weight: 800;
+   font-size: 1.11;
+   font-weight: 800;
+   margin-bottom: 31px;
+}
+.Number {
+   line-height: 0.8;
+   font-size: 4.44rem;
+   letter-spacing: -4px;
+   margin-right: 12px;
+}
+.PerMonth {
+   align-self: flex-end;
+}
+.CardTitle {
+   margin-bottom: 60px;
+   font-size: 1.11rem;
+}
+.PerMonthHidden {
+   display: none;
+}
+.CardItem:not(:last-child) {
+   margin-bottom: 26px;
+}
+.CardItem {
+   position: relative;
+}
+.CardList {
+   padding: 0px 0px 0px 40px;
+}
+.CardItem::before {
+   position: absolute;
+   content: '';
+   left: -28px;
+   top: 7px;
+   width: 10px;
+   height: 10px;
+   background-color: var(--black);
+}
+.ButtonJoin {
+   width: 100%;
+   background-color: var(--black);
+   color: var(--white);
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 52px;
+   transition: all 0.3s linear 0s;
+}
+.ButtonJoin:hover {
+   transition: all 0.3s linear 0s;
+   background-color: var(--white);
+   color: var(--black);
+   border: 1px solid var(--black);
+}
+.Card:nth-child(2) .ButtonJoin {
+   background-color: var(--white);
+   color: var(--black);
+}
+.Card:nth-child(2) .ButtonJoin:hover {
+   background-color: var(--black);
+   border: 1px solid var(--white);
+   color: var(--white);
+}
+.Card:nth-child(2) .CardItem::before {
+   background-color: var(--white);
+}
+.CardButton {
+   padding: 0px 12px 0px 0px;
+}
+@media (max-width:1199.98px) {
+   .Card {
+      padding: 52px 17px 48px;
+      display: flex;
+      min-height: 624px;
+      flex-direction: column;
+   }
+   .CardItem:not(:last-child) {
+      margin-bottom: 10px;
+   }
+   .CardButton {
+      padding: 0px;
+   }
+   .CardList {
+      padding: 0px 0px 10px 31px;
+   }
+}
+@media (max-width:991.98px) {
+   .PerMonthDesktop {
+      display: none;
+   }
+   .PerMonthHidden {
+      display: flex;
+   }
+   .CardTitle {
+      margin-bottom: 30px;
+   }
+   .CardItem {
+      font-size: 0.875rem;
+   }
+   .CardItem::before {
+      left: -20px;
+   }
+   .CardList {
+      padding: 0px 0px 10px 24px;
+   }
+   .Card {
+      padding: 52px 10px 48px;
+   }
+}
+@media (max-width:766.98px) {
+   .CardPrice {
+     justify-content: center;
+   }
+   .CardTitle {
+      text-align: center;
+   }
+   .CardListContent {
+      display: flex;
+      justify-content: center;
+   }
+   .CardTitle {
+      margin-bottom: 60px;
+   }
+   .CardItem {
+      font-size: 1rem;
+   }
+   .CardItem:not(:last-child) {
+      margin-bottom: 26px;
+   }
+   .CardItem::before {
+      left: -28px;
+   }
+   .CardList {
+      padding: 0px 0px 10px 31px;
+   }
+   .Card {
+      padding: 52px 17px 48px;
+   }
+}

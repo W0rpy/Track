@@ -1,0 +1,122 @@
+.TopSection {
+   padding: 43px 0px 0px 0px;
+}
+
+.TopSectionBlock {
+   display: grid;
+   grid-template-columns: 1fr 542px;
+   column-gap: 10px;
+}
+
+.TopSectionTitle {
+   font-size: 3.9rem;
+   line-height: 1.14;
+   letter-spacing: -4px;
+   margin-bottom: 20px;
+   padding: 40px 0px 0px;
+   max-width: 685px;
+}
+
+.TopSectionSubtitle {
+   margin-bottom: 40px;
+   max-width: 540px;
+}
+
+.TopSectionForm {
+   margin-bottom: 80px;
+}
+
+.TopSectionPictures {
+   display: flex;
+   gap: 31.5px;
+}
+
+.TopSectionImage {
+   position: relative;
+}
+
+.Illustration {
+   object-fit: contain;
+   width: 100%;
+   height: auto;
+}
+
+@media (max-width:1199.98px) {
+   .TopSectionTitle {
+      font-size: 3.2rem;
+   }
+
+   .TopSectionForm {
+      margin-bottom: 40px;
+   }
+
+   .TopSectionBlock {
+      grid-template-columns: 1fr 460px;
+   }
+}
+
+@media (max-width:991.98px) {
+   .TopSection {
+      padding: 20px 0px 0px 0px;
+   }
+
+   .TopSectionTitle {
+      font-size: 3.5rem;
+      max-width: 100%;
+   }
+
+   .TopSectionBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   .Illustration {
+      max-width: 543px;
+      max-height: 580px;
+   }
+
+   .TopSectionImage {
+      text-align: center;
+   }
+}
+
+@media (max-width:766.98px) {
+   .TopSection {
+      padding: 20px 0px 0px 0px;
+   }
+
+   .TopSectionTitle {
+      padding: 0px;
+      margin-bottom: 35px;
+      font-size: 3rem;
+   }
+
+   .TopSectionSubtitle {
+      margin-bottom: 30px;
+      max-width: 100%;
+   }
+
+   .Illustration {
+      max-height: 500px;
+   }
+}
+
+@media (max-width:515px) {
+   .TopSectionTitle {
+      font-size: 1.5rem;
+      letter-spacing: -1.4px;
+   }
+
+   .FormButton {
+      flex: 0 0 132px;
+   }
+
+   .Form {
+      max-width: 100%;
+   }
+
+   .TopSectionPictures {
+      gap: 25px;
+   }
+}

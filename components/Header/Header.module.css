@@ -1,0 +1,123 @@
+.HeaderBlock {
+   padding: 36px 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.HeaderLogo {
+   margin-right: 40px;
+   z-index: 10;
+}
+
+.HeaderNav {
+   display: flex;
+   align-items: center;
+}
+
+.NavList {
+   display: flex;
+}
+
+.NavItem:not(:last-child) {
+   margin-right: 40px;
+}
+
+.HeaderLoginItem {
+   color: inherit;
+}
+
+.HeaderLogin {
+   margin-right: 67px;
+}
+
+.HeaderSignin {
+   display: flex;
+   align-items: center;
+}
+
+.HeaderSignupLink {
+   min-height: 52px;
+   width: 145px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--white);
+   background-color: var(--black);
+   transition: all 0.3s linear 0s;
+   border: 1px solid var(--black);
+}
+.HeaderSignupLink:hover {
+   background-color: var(--grey);
+   color: var(--black);
+   transition: all 0.3s linear 0s;
+}
+
+.NavLink {
+   color: var(--black);
+}
+
+.NavLink:hover,.HeaderLoginItem:hover {
+   text-decoration: underline;
+}
+
+.HeaderMenu {
+   display: none;
+   z-index: 10;
+}
+
+@media (max-width:991.98px) {
+   .HeaderMenu {
+      display: block;
+   }
+
+   .HeaderSignup {
+      margin-right: 20px;
+   }
+
+   .Nav {
+      display: none;
+   }
+   .Nav.active {
+      display: block;
+      position: fixed;
+      z-index: 2;
+      background-color: var(--grey);
+      top:0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+   }
+   .NavList {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: auto;
+   }
+   .NavItem:not(:last-child) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+   }
+   .NavLink {
+      font-size: 1.5rem;
+      font-weight: 800;
+   }
+}
+
+@media (max-width:766.98px) {
+   .HeaderLogo {
+      margin-right: 15px;
+   }
+
+   .HeaderLogin {
+      margin-right: 30px;
+   }
+
+   .HeaderSignupLink {
+      width: 100px;
+   }
+}

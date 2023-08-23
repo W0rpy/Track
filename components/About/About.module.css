@@ -1,0 +1,97 @@
+.About {
+   padding: 199px 0px 0px;
+   scroll-behavior: smooth;
+}
+
+.AboutDescription {
+   margin-bottom: 34px;
+}
+
+.AboutList {
+   padding: 0px 0px 0px 47px;
+}
+
+.AboutItem {
+   font-size: 1.11rem;
+   position: relative;
+}
+
+.AboutItem::before {
+   content: '';
+   position: absolute;
+   width: 9px;
+   height: 9px;
+   background-color: var(--black);
+   top: 9px;
+   left: -29px;
+}
+
+.AboutItem:not(:last-child) {
+   margin-bottom: 24px;
+}
+
+.AboutBlock {
+   display: grid;
+   grid-template-columns: 529px 1fr;
+   column-gap: 35px;
+}
+
+.AboutImage {
+   position: relative;
+   padding: 23px 0px 0px;
+}
+
+.Illustration {
+   object-fit: contain;
+   height: auto;
+   width: 100%;
+}
+
+@media (max-width:1199.98px) {
+   .AboutImage {
+      padding: 11px 0px 0px;
+   }
+
+   .AboutBlock {
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      column-gap: 10px;
+   }
+}
+
+@media (max-width:991.98px) {
+   .About {
+      padding: 100px 0px 0px;
+   }
+
+   .AboutBlock {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 40px;
+   }
+
+   .Illustration {
+      max-width: 500px;
+      max-height: 432px;
+   }
+
+   .AboutImage {
+      text-align: center;
+      padding: 0px;
+   }
+
+   .AboutItem {
+      font-size: 1rem;
+   }
+}
+
+@media (max-width:766.98px) {
+
+   .AboutDescription {
+      margin-bottom: 41px;
+   }
+
+   .AboutItem:not(:last-child) {
+      margin-bottom: 21px;
+   }
+}

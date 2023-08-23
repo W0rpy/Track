@@ -1,0 +1,17 @@
+.Anchor {
+   padding: 6px 16px 4px;
+   border: 1px solid var(--black);
+   display: inline-block;
+   text-align: center;
+   font-size: 0.77rem;
+   font-weight: 800;
+   line-height: 1.8;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+@media (max-width:766.98px) {
+   .Anchor {
+      margin-bottom: 24px;
+   }
+}
