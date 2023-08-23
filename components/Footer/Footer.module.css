@@ -61,6 +61,7 @@
    font-size: 1.11rem;
    line-height: 1.5;
    width: 100%;
+   border-radius: none;
 }
 .FormButton.Disable {
    background-color: var(--grey);
@@ -122,6 +123,7 @@
 }
 .FormButton {
    background-color: var(--white);
+   color: var(--black);
    width: 176px;
    display: flex;
    justify-content: center;
